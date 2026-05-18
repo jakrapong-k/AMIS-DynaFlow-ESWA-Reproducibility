@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "AMIS-DynaFlow"
+message: "If you use this software, please cite the associated Expert Systems with Applications article."
+type: software
+authors:
+  - family-names: Krittiwattanapong
+    given-names: Jakrapong
+  - family-names: Pitakaso
+    given-names: Rapeepan
+repository-code: "https://github.com/aiosmartlab/AMIS-DynaFlow"
+license: "Apache-2.0"
+keywords:
+  - healthcare scheduling
+  - multi-agent reinforcement learning
+  - quantum-inspired optimization
+  - patient flow optimization
+  - probabilistic forecasting

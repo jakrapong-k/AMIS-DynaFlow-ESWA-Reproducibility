@@ -1,0 +1,24 @@
+gat_mappo:
+  seed: 42
+  public_workflow_mode: graph_attention_policy_scaffold
+  total_timesteps: 100000
+  ppo_clip: 0.20
+  gamma: 0.99
+  gae_lambda: 0.95
+  learning_rate: 0.0003
+  batch_size: 256
+  epochs: 10
+  graph_attention:
+    num_heads: 4
+    hidden_dim: 128
+    attention_temperature: 1.0
+  reward:
+    waiting_time_weight: 1.0
+    workload_balance_weight: 0.5
+    disruption_penalty_weight: 0.2
+  input:
+    pareto_archive: results/sample_outputs/pareto_archive.csv
+    tft_predictions: results/sample_outputs/tft_quantile_predictions.csv
+  output:
+    adapted_schedule: results/sample_outputs/gat_mappo_adapted_schedule.csv
+    metrics: results/sample_outputs/gat_mappo_metrics.csv

@@ -1,0 +1,24 @@
+experiment:
+  name: amis_dynaflow_synthetic_reproducibility
+  description: Paper-aligned synthetic workflow for AMIS-DynaFlow.
+  seeds: [42, 123, 456, 789, 2024]
+  num_patients: 1000
+  clinical_reference_num_patients: 15988
+  num_stations: 24
+  planning_horizon_minutes: 480
+  no_show_rate_range: [0.10, 0.15]
+  emergency_arrival_rate_per_day: 0.035
+  output_dir: results/sample_outputs
+paths:
+  synthetic_dir: data/synthetic
+  processed_dir: results/sample_outputs/processed
+  schema_dir: data/schema
+objectives:
+  - patient_waiting_time
+  - total_time_in_system
+  - resource_utilization_balance
+  - staff_workload_equity
+privacy:
+  real_clinical_data_included: false
+  synthetic_data_only: true
+  pii_allowed: false

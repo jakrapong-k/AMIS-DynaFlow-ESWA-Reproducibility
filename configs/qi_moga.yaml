@@ -1,0 +1,24 @@
+qi_moga:
+  seed: 42
+  population_size: 40
+  generations: 30
+  candidate_states: 24
+  chromosome_length: 24
+  crossover_rate: 0.80
+  mutation_rate: 0.05
+  rotation_angle: 0.05
+  entropy_tracking: true
+  selection:
+    method: nsga2
+    use_crowding_distance: true
+  objectives:
+    minimize:
+      - patient_waiting_time
+      - total_time_in_system
+      - resource_utilization_balance
+      - staff_workload_equity
+  input:
+    processed_services: results/sample_outputs/processed/services_processed.csv
+  output:
+    pareto_archive: results/sample_outputs/pareto_archive.csv
+    metrics: results/sample_outputs/qi_moga_metrics.csv

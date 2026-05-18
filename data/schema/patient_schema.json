@@ -1,0 +1,8 @@
+{
+  "patient_id": "synthetic anonymized identifier; never use hospital number or national ID",
+  "arrival_time_min": "integer minutes from start of synthetic day",
+  "pathway_id": "synthetic pathway identifier",
+  "acuity_level": "integer category from 1 to 5",
+  "no_show_probability": "float between 0 and 1",
+  "emergency_flag": "0/1 synthetic emergency indicator"
+}

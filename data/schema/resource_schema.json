@@ -1,0 +1,6 @@
+{
+  "resource_id": "synthetic resource identifier",
+  "station_id": "station to which resource is assigned",
+  "capacity": "non-negative integer capacity",
+  "resource_type": "synthetic staff/equipment/room category"
+}
