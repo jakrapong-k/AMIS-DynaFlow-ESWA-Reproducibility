@@ -1,0 +1,9 @@
+pathway_id,station_sequence,clinical_group
+P01,18>11>16,consultation
+P02,5>2>18>12>23,consultation
+P03,22>9>11>19>8>5,chemotherapy
+P04,22>13>3,follow_up
+P05,18>17>14>4,chemotherapy
+P06,5>16>9>12>13>21,radiology
+P07,10>23>22>8>15>21,chemotherapy
+P08,8>11>16,radiology

@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 
 class QuantileServiceTimeForecaster:
-    """Public lightweight quantile forecaster for synthetic reproducibility.
+    """Public lightweight quantile forecaster for sample-data reproducibility.
 
     This mirrors the public workflow expected from the TFT component: multi-quantile
     service-time predictions. Production TFT implementations can replace this class

@@ -11,18 +11,18 @@ This repository is designed to support reproducibility, auditability, and safe p
 2. **GAT-MAPPO**: graph-attention-based multi-agent proximal policy optimization for decentralized real-time adaptation.
 3. **TFT**: Temporal Fusion Transformer-style probabilistic service-time forecasting with quantile outputs.
 
-> **Important privacy note**: the real clinical dataset used in the study is not included. This repository provides synthetic data, data schemas, preprocessing logic, configuration files, and executable workflow scripts for methodological replication. Synthetic results are intended to validate the computational workflow, not to exactly reproduce the clinical performance values reported in the paper.
+> **Important privacy note**: the real clinical dataset used in the study is not included. This repository provides sample data, data schemas, preprocessing logic, configuration files, and executable workflow scripts for methodological replication. Sample-data workflow results are intended to validate the computational workflow, not to exactly reproduce the clinical performance values reported in the paper.
 
 ## Repository structure
 
 ```text
-AMIS-DynaFlow/
+AMIS-DynaFlow-ESWA-Reproducibility/
 ├── configs/                 # Model and experiment configuration files
 ├── data/
-│   ├── schema/              # Public anonymized data schemas
-│   └── synthetic/           # Synthetic demonstration data
+│   ├── schema/              # Public data schemas
+│   └── sample/           # Sample demonstration data
 ├── docs/                    # Reproducibility, privacy, and proof check documents
-├── results/                 # Sample outputs from the synthetic workflow
+├── results/                 # Sample outputs from the sample-data workflow
 ├── scripts/                 # CLI scripts for data, training, optimization, and evaluation
 ├── src/amis_dynaflow/       # Python package
 └── tests/                   # Lightweight validation tests
@@ -31,17 +31,17 @@ AMIS-DynaFlow/
 ## Installation
 
 ```bash
-git clone https://github.com/aiosmartlab/AMIS-DynaFlow.git
-cd AMIS-DynaFlow
+git clone https://github.com/jakrapong-k/AMIS-DynaFlow-ESWA-Reproducibility.git
+cd AMIS-DynaFlow-ESWA-Reproducibility
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Quick start: synthetic reproducibility workflow
+## Quick start: sample-data reproducibility workflow
 
 ```bash
-python scripts/generate_synthetic_data.py --config configs/experiment_main.yaml
+python scripts/generate_sample_data.py --config configs/experiment_main.yaml
 python scripts/preprocess_data.py --config configs/experiment_main.yaml
 python scripts/train_tft.py --config configs/tft.yaml
 python scripts/run_qi_moga.py --config configs/qi_moga.yaml
@@ -58,7 +58,7 @@ results/sample_outputs/reproduction_summary.csv
 
 ## Reproducibility configuration
 
-The synthetic workflow uses fixed random seeds:
+The sample-data workflow uses fixed random seeds:
 
 ```text
 42, 123, 456, 789, 2024
@@ -70,7 +70,7 @@ These seeds are defined in `configs/seeds.yaml` and are used across data generat
 
 Included:
 
-- executable synthetic data generation;
+- executable sample data generation;
 - public data schemas and data dictionary;
 - preprocessing pipeline;
 - paper-aligned QI-MOGA reference implementation;
@@ -92,4 +92,4 @@ After the ESWA article DOI is available, update `CITATION.cff` with the final DO
 
 ## License
 
-This package is released under the Apache License 2.0. See `LICENSE`.
+This package is released under the MIT License. See `LICENSE`.

@@ -15,7 +15,7 @@ base = pd.read_csv(Path(cfg['paths']['processed_dir']) / 'services_processed.csv
 adapted_path = Path(out) / 'gat_mappo_adapted_schedule.csv'
 adapted = pd.read_csv(adapted_path) if adapted_path.exists() else base.copy()
 rows = []
-for name, df in [('synthetic_current_practice', base), ('amis_dynaflow_public_workflow', adapted)]:
+for name, df in [('sample_current_practice', base), ('amis_dynaflow_public_workflow', adapted)]:
     metrics = evaluate_schedule(df)
     metrics['configuration'] = name
     rows.append(metrics)

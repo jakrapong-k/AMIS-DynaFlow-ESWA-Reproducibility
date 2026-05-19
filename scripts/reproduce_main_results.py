@@ -8,7 +8,7 @@ parser.add_argument('--config', default='configs/experiment_main.yaml')
 args = parser.parse_args()
 root = Path(__file__).resolve().parents[1]
 steps = [
-    ['python', 'scripts/generate_synthetic_data.py', '--config', args.config],
+    ['python', 'scripts/generate_sample_data.py', '--config', args.config],
     ['python', 'scripts/preprocess_data.py', '--config', args.config],
     ['python', 'scripts/train_tft.py', '--config', 'configs/tft.yaml'],
     ['python', 'scripts/run_qi_moga.py', '--config', 'configs/qi_moga.yaml'],

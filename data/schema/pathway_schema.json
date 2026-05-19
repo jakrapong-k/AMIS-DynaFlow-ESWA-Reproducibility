@@ -1,5 +1,5 @@
 {
-  "pathway_id": "synthetic pathway identifier",
+  "pathway_id": "sample pathway identifier",
   "station_sequence": "ordered list of station IDs",
-  "clinical_group": "synthetic oncology workflow category"
+  "clinical_group": "sample oncology workflow category"
 }

@@ -4,7 +4,7 @@ import pandas as pd
 
 
 class GraphAttentionPolicyScaffold:
-    """Lightweight graph-attention adaptation scaffold for the public synthetic workflow."""
+    """Lightweight graph-attention adaptation scaffold for the public sample-data workflow."""
 
     def __init__(self, num_heads=4, temperature=1.0, seed=42):
         self.num_heads = num_heads

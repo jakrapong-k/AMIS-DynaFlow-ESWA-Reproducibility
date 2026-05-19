@@ -1,7 +1,7 @@
 tft:
   seed: 42
   public_workflow_mode: quantile_surrogate
-  note: The public package provides a lightweight quantile forecasting workflow for synthetic replication; production TFT code can be placed under src/amis_dynaflow/tft/.
+  note: The public package provides a lightweight quantile forecasting workflow for sample-data replication; production TFT code can be placed under src/amis_dynaflow/tft/.
   quantiles: [0.10, 0.50, 0.90]
   forecast_horizon: 48
   hidden_size: 128

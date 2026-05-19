@@ -1,6 +1,6 @@
 # Reproducibility guide
 
-This guide reproduces the public synthetic workflow of AMIS-DynaFlow.
+This guide reproduces the public sample-data workflow of AMIS-DynaFlow.
 
 ## 1. Install
 
@@ -8,10 +8,10 @@ This guide reproduces the public synthetic workflow of AMIS-DynaFlow.
 pip install -r requirements.txt
 ```
 
-## 2. Generate synthetic data
+## 2. Generate sample data
 
 ```bash
-python scripts/generate_synthetic_data.py --config configs/experiment_main.yaml
+python scripts/generate_sample_data.py --config configs/experiment_main.yaml
 ```
 
 ## 3. Preprocess
@@ -44,10 +44,10 @@ python scripts/train_gat_mappo.py --config configs/gat_mappo.yaml
 python scripts/evaluate_baselines.py --config configs/experiment_main.yaml
 ```
 
-## 8. One-command synthetic reproduction
+## 8. One-command sample-data reproduction
 
 ```bash
 python scripts/reproduce_main_results.py --config configs/experiment_main.yaml
 ```
 
-The synthetic workflow validates the computational structure. It is not intended to exactly reproduce clinical outcomes reported in the article because the real clinical data cannot be shared publicly.
+The sample-data workflow validates the computational structure. It is not intended to exactly reproduce clinical outcomes reported in the article because the real clinical data cannot be shared publicly.

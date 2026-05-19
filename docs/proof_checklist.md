@@ -11,7 +11,7 @@
 - [ ] Training/evaluation scripts are present.
 - [ ] Configuration files are present for QI-MOGA, GAT-MAPPO, and TFT.
 - [ ] Fixed seeds are documented.
-- [ ] Synthetic data and data schemas are included.
+- [ ] Sample data and data schemas are included.
 - [ ] Privacy statement is included.
 - [ ] No real patient data are included.
 - [ ] No API keys, database credentials, or EHR/HIS credentials are included.

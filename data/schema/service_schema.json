@@ -1,8 +1,8 @@
 {
-  "patient_id": "synthetic anonymized identifier",
-  "station_id": "synthetic service station index",
+  "patient_id": "sample anonymized identifier",
+  "station_id": "sample service station index",
   "sequence_order": "integer order in pathway",
   "planned_start_min": "integer planned start time in minutes",
-  "service_duration_min": "synthetic stochastic service duration",
-  "resource_id": "synthetic resource identifier"
+  "service_duration_min": "sample stochastic service duration",
+  "resource_id": "sample resource identifier"
 }

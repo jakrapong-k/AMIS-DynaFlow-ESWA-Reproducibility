@@ -1,6 +1,6 @@
 experiment:
-  name: amis_dynaflow_synthetic_reproducibility
-  description: Paper-aligned synthetic workflow for AMIS-DynaFlow.
+  name: amis_dynaflow_sample_reproducibility
+  description: Paper-aligned sample-data workflow for AMIS-DynaFlow.
   seeds: [42, 123, 456, 789, 2024]
   num_patients: 1000
   clinical_reference_num_patients: 15988
@@ -10,7 +10,7 @@ experiment:
   emergency_arrival_rate_per_day: 0.035
   output_dir: results/sample_outputs
 paths:
-  synthetic_dir: data/synthetic
+  sample_dir: data/sample
   processed_dir: results/sample_outputs/processed
   schema_dir: data/schema
 objectives:
@@ -20,5 +20,5 @@ objectives:
   - staff_workload_equity
 privacy:
   real_clinical_data_included: false
-  synthetic_data_only: true
+  sample_data_only: true
   pii_allowed: false

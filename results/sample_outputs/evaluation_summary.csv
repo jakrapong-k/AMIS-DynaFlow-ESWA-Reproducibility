@@ -1,3 +1,3 @@
 patient_waiting_time,total_time_in_system,resource_utilization_balance,staff_workload_equity,num_services,configuration
-79.08554835827563,167.867,1376.5475538258438,884.4692012098325,4477,synthetic_current_practice
+79.08554835827563,167.867,1376.5475538258438,884.4692012098325,4477,sample_current_practice
 79.08554835827563,167.867,1376.5475538258438,884.4692012098325,4477,amis_dynaflow_public_workflow

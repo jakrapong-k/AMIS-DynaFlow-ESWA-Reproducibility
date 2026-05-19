@@ -9,7 +9,7 @@
 | Fixed random seeds | `configs/seeds.yaml` |
 | Training/evaluation scripts | `scripts/` |
 | Model configuration files | `configs/` |
-| Synthetic data generation | `scripts/generate_synthetic_data.py` |
+| Sample data generation | `scripts/generate_sample_data.py` |
 | Anonymized data structures | `data/schema/` |
 | Clinical data privacy restriction | `docs/privacy_statement.md` |
 | Proof risk mitigation for QI terminology | `docs/proof_checklist.md` |
