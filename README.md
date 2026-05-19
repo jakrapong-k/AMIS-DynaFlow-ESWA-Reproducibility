@@ -11,6 +11,8 @@ This repository is designed to support reproducibility, auditability, and safe p
 2. **GAT-MAPPO**: graph-attention-based multi-agent proximal policy optimization for decentralized real-time adaptation.
 3. **TFT**: Temporal Fusion Transformer-style probabilistic service-time forecasting with quantile outputs.
 
+> **Important scope note**: this repository is a reproducibility/scaffold package, not a production-ready clinical application. It does not provide a deployed API service, authentication layer, or operational MLOps stack.
+
 > **Important privacy note**: the real clinical dataset used in the study is not included. This repository provides sample data, data schemas, preprocessing logic, configuration files, and executable workflow scripts for methodological replication. Sample-data workflow results are intended to validate the computational workflow, not to exactly reproduce the clinical performance values reported in the paper.
 
 ## Repository structure
@@ -20,15 +22,17 @@ AMIS-DynaFlow-ESWA-Reproducibility/
 ├── configs/                 # Model and experiment configuration files
 ├── data/
 │   ├── schema/              # Public data schemas
-│   └── sample/           # Sample demonstration data
-├── docs/                    # Reproducibility, privacy, and proof check documents
+│   └── sample/              # Sample demonstration data
+├── docs/                    # Reproducibility and developer documentation
 ├── results/                 # Sample outputs from the sample-data workflow
 ├── scripts/                 # CLI scripts for data, training, optimization, and evaluation
 ├── src/amis_dynaflow/       # Python package
 └── tests/                   # Lightweight validation tests
 ```
 
-## Installation
+For a deeper breakdown, see `docs/project_structure.md`.
+
+## Quickstart
 
 ```bash
 git clone https://github.com/jakrapong-k/AMIS-DynaFlow-ESWA-Reproducibility.git
@@ -36,9 +40,10 @@ cd AMIS-DynaFlow-ESWA-Reproducibility
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+cp .env.example .env
 ```
 
-## Quick start: sample-data reproducibility workflow
+Then run the sample reproducibility workflow:
 
 ```bash
 python scripts/generate_sample_data.py --config configs/experiment_main.yaml
@@ -50,11 +55,16 @@ python scripts/evaluate_baselines.py --config configs/experiment_main.yaml
 python scripts/reproduce_main_results.py --config configs/experiment_main.yaml
 ```
 
-The final summary is written to:
+Expected final summary output:
 
 ```text
 results/sample_outputs/reproduction_summary.csv
 ```
+
+## Development setup
+
+- Environment setup and troubleshooting: `docs/development_setup.md`
+- Project directory and module map: `docs/project_structure.md`
 
 ## Reproducibility configuration
 
