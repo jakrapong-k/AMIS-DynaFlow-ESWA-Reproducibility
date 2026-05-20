@@ -61,6 +61,16 @@ Expected final summary output:
 results/sample_outputs/reproduction_summary.csv
 ```
 
+
+## Local MVP run (safe development)
+
+For running the merged backend/frontend MVP locally (mock-only, no real hospital integrations), use:
+
+- `docs/local_mvp_runbook.md`
+- Helper scripts:
+  - `bash scripts/run_backend_mvp.sh`
+  - `bash scripts/run_frontend_mvp.sh`
+
 ## Development setup
 
 - Environment setup and troubleshooting: `docs/development_setup.md`
