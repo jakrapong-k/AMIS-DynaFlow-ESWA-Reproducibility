@@ -103,3 +103,8 @@ After the ESWA article DOI is available, update `CITATION.cff` with the final DO
 ## License
 
 This package is released under the MIT License. See `LICENSE`.
+
+
+## Frontend MVP (Phase 4)
+- React skeleton and run guide: `docs/frontend_mvp_run_instructions.md`
+- Source location: `frontend/`
