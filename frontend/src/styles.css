@@ -1,0 +1,14 @@
+:root { font-family: Inter, system-ui, Arial, sans-serif; color: #111827; background: #f3f4f6; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.layout { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+.sidebar { background: #111827; color: #fff; padding: 1rem; }
+.sidebar a { display: block; color: #d1d5db; text-decoration: none; margin: .6rem 0; }
+.sidebar a.active { color: #fff; font-weight: 700; }
+.content { padding: 1.25rem; }
+.card { background: #fff; border-radius: 10px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); }
+input, button { padding: .55rem .7rem; margin: .3rem 0; }
+button { cursor: pointer; }
+.table { width: 100%; border-collapse: collapse; }
+.table td, .table th { border-bottom: 1px solid #e5e7eb; text-align: left; padding: .5rem; }
